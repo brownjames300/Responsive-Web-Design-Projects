@@ -1,70 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Skate Setup Survey</title>
+    <link rel="icon" href="/Images/checklist.png">
 </head>
 <style>
-    h1 {
+    #title {
         font-family: monospace;
         font-style: normal;
         font-size: 50px;
         text-align: center;
-        color: white;
-        border-color: black;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: black;
+        color: #292929;
     }
-    p {
-        text-align: center;
-        font-size: 25px;
-        font-style: italic;
-    }
-    body {
-        background-color: #ffbd96;
-    }
-    * {
-        box-sizing: border-box;
-    }
-    .questions {
-        width: 100%;
-        float: left;
-        padding: 15px;
-        border: 3px solid black;
-        margin: 10px 0;
-    }
-    input {
-        width: 100px;
-        margin: 10px 0;
-    }
-    button {
 
+    #description {
+        text-align: center;
+        font-size: 20px;
+        font-style: italic;
+        color: #292929;
     }
-    button:hover {
-        background-color: green;
-        color: white;
+    main.blocktext {
+        margin-left: auto;
+        margin-right: auto;
+        width: 8em
     }
 
 </style>
+
 <body>
-    <h1>Skate Setup Survey</h1>
-    <p>This survey is to find out what the best skate setup is.</p>
-    <div class="questions">
-        <form action="" id="form1">
-            <label for="deck">Deck:</label>
-            <input type="text" name="deck">
-            <label for="trucks">Trucks:</label>
-            <input type="text" name="trucks">
-            <label for="wheels">Wheels:</label>
-            <input type="text" name="wheels">
-            <label for="hardware">Hardware:</label>
-            <input type="text" name="hardware">
-            <label for="griptape">Griptape:</label>
-            <input type="text" name="griptape">
-        </form>
-        <button type="button" form="form1" value="Submit">Submit</button>
-    </div>
+    <header>
+        <h1 id="title">freecodecamp Survey Form Project</h1>
+        <p id="description">Project Built Using HTML and CSS</p>
+    </header>
 </body>
+<main>
+    <h3>Infomation</h3>
+    <form id="survey-form" action="">
+        <label for="name" id="name">Name</label>
+        <input type="text" name="name" value="">
+    </form>
+</main>
 </html>
