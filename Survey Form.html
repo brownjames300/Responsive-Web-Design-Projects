@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Skate Setup Survey</title>
     <link rel="icon" href="/Images/checklist.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <style>
     #title {
-        font-family: monospace;
+        font-family: Poppins;
         font-style: normal;
         font-size: 50px;
         text-align: center;
@@ -22,26 +24,71 @@
         font-size: 20px;
         font-style: italic;
         color: #292929;
-    }
-    main.blocktext {
-        margin-left: auto;
-        margin-right: auto;
-        width: 8em
+        font-family: poppins;
     }
 
+    body {
+        background-image: url("skate-img.jpg");
+
+    }
+
+    .flex-container {
+        display: flex;
+        background-color: #d9d9d9;
+        width: 600px;
+        height: 700px;
+        position: inherit;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 0 auto;
+        opacity: 0.9;
+    }
+
+    form {
+        margin: 0 auto;
+    }
+    label {
+        font-size: 24px;
+        font-family: Poppins;
+        color: #292929;
+        position: relative;
+        display: block;
+        padding: 10px;
+    }
+    input {
+        width: 300px;
+        border-radius: 5px;
+        display: block;
+        height: 50px;
+        font-size: 24px;
+        font-family: Poppins;
+    }
+
+    button {
+        font-size: 20px;
+        font-family: poppins;
+        background-color: #6AD873;
+        color: white;
+        width: 328px;
+        opacity: auto;
+    }
 </style>
 
 <body>
     <header>
-        <h1 id="title">freecodecamp Survey Form Project</h1>
+        <h1 id="title">skate setup survey form</h1>
         <p id="description">Project Built Using HTML and CSS</p>
     </header>
+    <div class="flex-container">
+        <form action="" id="setup-form">
+            <label>Deck <input type="text"></label>
+            <label>Trucks <input type="text"></label>
+            <label>Wheels <input type="text"></label>
+            <label>Bearings <input type="text"></label>
+            <label>Griptape <input type="text"></label>
+            <label>Hardware <input type="text"></label>
+            <button>Submit</button>
+        </form>
+    </div>
 </body>
-<main>
-    <h3>Infomation</h3>
-    <form id="survey-form" action="">
-        <label for="name" id="name">Name</label>
-        <input type="text" name="name" value="">
-    </form>
-</main>
 </html>
