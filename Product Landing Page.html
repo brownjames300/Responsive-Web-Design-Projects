@@ -10,60 +10,57 @@
 </head>
 <style>
     #header-image {
-        width: 75px;
+        width: 700px;
         height: auto;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
     }
 
     .nav-link {
         color: red;
     }
 
-    #div1 {
-        float: left;
-    }
-
-    #div2 {
-        float: left;
-        padding-left: 20px;
+    #heading-div {
+        text-align: center;
+        color: white;
     }
 
     #div3 {
-        float: left;
+        float: right;
+        padding-bottom: 30px;
     }
 
-    #video {
-        width: 500px;
-        height: auto;
-        display: block;
-        position: absolute;
-        top: 25%;
-        left: 25%;
-
-    }
     body {
-
+        background-color: #484848;
     }
+
+    iframe {
+        border: 5px solid black;
+        display: block;
+        margin: auto;
+    }
+
 </style>
 
 <header id="header">
-    <div id="div1">
-        <img id="header-image" src="/Images/frothed hd logo.PNG" alt="404">
-    </div>
-    <div id="div2">
+
+    <div id="heading-div">
         <h1>Frothed Clothing Store</h1>
+    </div>
+    <div id="logo-div">
+        <img id="header-image" src="/Images/frothed hd logo.PNG" alt="404">
     </div>
     <div id="div3">
         <nav id="nav-bar">
-            <button class="nav-link">Shop</button>
-            <button class="nav-link">Video</button>
-            <button class="nav-link">Contact</button>
+            <a href="#frame1">Frame1</a>
         </nav>
     </div>
 </header>
 
 <body>
+    <iframe id ="frame1" width="1850px" height="200px"></iframe>
 
-    <video controls id="video" src="/Videos/lex fatty clip.mp4" type="video/mp4"></video>
 </body>
 
 </html>
