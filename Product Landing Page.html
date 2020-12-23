@@ -10,20 +10,21 @@
 </head>
 <style>
     #header-image {
-        width: 700px;
+        width: 500px;
         height: auto;
         max-width: 100%;
         display: block;
         margin: 0 auto;
     }
 
-    .nav-link {
+    .nav-bar {
         color: red;
     }
 
     #heading-div {
-        text-align: center;
-        color: white;
+        top: 0;
+        color: black;
+        margin-top: 50px;
     }
 
     #div3 {
@@ -32,13 +33,36 @@
     }
 
     body {
-        background-color: #484848;
+        background-color: white;
     }
 
-    iframe {
-        border: 5px solid black;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #888888;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    li {
+        float: right;
+    }
+
+    li a {
         display: block;
-        margin: auto;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+    }
+
+    li a:hover {
+        background-color: white;
+        color: #888888
     }
 
 </style>
@@ -51,15 +75,18 @@
     <div id="logo-div">
         <img id="header-image" src="/Images/frothed hd logo.PNG" alt="404">
     </div>
-    <div id="div3">
-        <nav id="nav-bar">
-            <a href="#frame1">Frame1</a>
-        </nav>
+<nav id="nav-bar">
+    <div>
+        <ul>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Home</a></li>
+        </ul>
     </div>
+</nav>
 </header>
 
 <body>
-    <iframe id ="frame1" width="1850px" height="200px"></iframe>
 
 </body>
 
